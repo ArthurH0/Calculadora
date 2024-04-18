@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="calculadora.js"></script>
+</head>
+
+<body>
+  <div id="calculadora">
+    <div id="divvisor">
+      <p id="visor" style="display: flex; padding:10px;"></p>
+    </div>
+
+    <div class="corpo">
+      <div class="numeros">   
+        <button class="num" onclick="Inserir('1')">1</button>
+        <button class="num" onclick="Inserir('2')">2</button>
+        <button class="num" onclick="Inserir('3')">3</button>
+        <button class="num" onclick="Inserir('4')">4</button>
+        <button class="num" onclick="Inserir('5')">5</button>
+        <button class="num" onclick="Inserir('6')">6</button>
+        <button class="num" onclick="Inserir('7')">7</button>
+        <button class="num" onclick="Inserir('8')">8</button>
+        <button class="num" onclick="Inserir('9')">9</button>
+        <div style="display: flex; justify-content: center; width: 360px;">
+          <button class="num" onclick="Inserir('0')">0</button>
+        </div>
+        
+      </div>
+      <div class="operadores">
+        <button class="op" onclick="Inserir('.')">.</button>
+        <button class="op" onclick="Inserir('+')">+</button>
+        <button class="op" onclick="Inserir('-')">-</button>
+        <button class="op" onclick="Inserir('*')">*</button>
+        <button class="op" onclick="Inserir('/')">/</button>
+        <button id="c" onclick="Limpar()">C</button>
+        <button class="op" onclick="Calcular()">=</button>
+      </div>
+    </div>
+
+
+</body>
+
+</html>
